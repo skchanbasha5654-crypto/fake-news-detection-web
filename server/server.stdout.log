@@ -1,0 +1,4 @@
+MongoDB connected
+API listening on 5000
+GET /api/health 200 36 - 3.444 ms
+POST /api/verify 201 6039 - 2829.389 ms

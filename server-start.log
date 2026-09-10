@@ -1,0 +1,32 @@
+
+> veritas-ai-server@1.0.0 dev
+> nodemon src/server.js
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/server.js`[39m
+MongoDB connected
+API listening on 5000
+POST /api/chat/message 201 1588 - 1245.189 ms
+POST /api/chat/message 201 909 - 1098.973 ms
+POST /api/chat/message 201 909 - 1187.835 ms
+POST /api/chat/message 201 1886 - 1298.351 ms
+GET /api/health 200 38 - 0.541 ms
+GET /api/health 200 38 - 0.381 ms
+GET /api/chat/history 200 11644 - 50.819 ms
+GET /api/chat/history 304 - - 36.458 ms
+GET /api/health 304 - - 0.330 ms
+GET /api/chat/history 304 - - 36.387 ms
+GET /api/chat/history 304 - - 35.758 ms
+POST /api/auth/login 401 39 - 314.263 ms
+POST /api/auth/login 200 283 - 285.355 ms
+GET /api/chat/history 200 11644 - 39.611 ms
+GET /api/chat/history 304 - - 36.086 ms
+POST /api/chat/message 201 726 - 1202.222 ms
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `node src/server.js`[39m
+MongoDB connected
+API listening on 5000

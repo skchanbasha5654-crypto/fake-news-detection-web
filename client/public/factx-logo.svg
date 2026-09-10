@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" role="img" aria-labelledby="title">
+  <title>factX logo</title>
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1557ff"/>
+      <stop offset="0.52" stop-color="#11c9e8"/>
+      <stop offset="1" stop-color="#1557ff"/>
+    </linearGradient>
+    <linearGradient id="xmark" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1557ff"/>
+      <stop offset="0.55" stop-color="#16cbe8"/>
+      <stop offset="1" stop-color="#14d7e7"/>
+    </linearGradient>
+  </defs>
+  <circle cx="384" cy="384" r="291" fill="#071225" stroke="url(#ring)" stroke-width="28"/>
+  <path fill="#f7f8fa" d="M168 278h238l-46 47H229v43h130l-46 47H229v77h-61V340c0-19 0-30 10-40z"/>
+  <path fill="url(#xmark)" d="m373 278 76 77 78-77h78l-117 116 116 98h-78l-77-70-79 70h-78l119-99-116-115z"/>
+</svg>
