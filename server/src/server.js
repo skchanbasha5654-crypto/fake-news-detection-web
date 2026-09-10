@@ -24,6 +24,7 @@ app.use(cors({ origin: (origin, callback) => {
 app.use(express.json({ limit: '1mb' }));
 app.use(morgan('tiny'));
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, limit: 100, standardHeaders: true }));
+app.get('/api', (req, res) => res.json({ status: 'ok', service: 'factx-ai', health: '/api/health' }));
 app.get('/api/health', (req, res) => res.json({ status: 'ok', service: 'factx-ai' }));
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
