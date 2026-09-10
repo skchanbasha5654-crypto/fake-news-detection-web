@@ -14,7 +14,8 @@ import { notFound, errorHandler } from './middleware/error.js';
 
 const app = express();
 app.use(helmet());
-const allowedOrigins = new Set([process.env.CLIENT_URL, 'http://localhost:5173', 'http://127.0.0.1:5173'].filter(Boolean));
+const clientUrl = process.env.CLIENT_URL?.replace(/\/+$/, '');
+const allowedOrigins = new Set([clientUrl, 'http://localhost:5173', 'http://127.0.0.1:5173'].filter(Boolean));
 app.use(cors({ origin: (origin, callback) => {
 	const isLocalDevelopmentOrigin = /^http:\/\/(localhost|127\.0\.0\.1):\d+$/.test(origin || '');
 	if (!origin || allowedOrigins.has(origin) || isLocalDevelopmentOrigin) return callback(null, true);
